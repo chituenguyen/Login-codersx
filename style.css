@@ -1,0 +1,75 @@
+body{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #DDD;
+	text-shadow: 0.2px 0.2px 1px rgba(0,0,0,0.3);
+}
+div{
+	margin-bottom: 30px;
+}
+form{
+	padding:16px 15px 16px 15px;
+	background-color: white;
+	border-radius: 30px;
+	box-shadow: 0.2px 2px 12px rgba(0,0,0,0.3)
+
+}
+
+h2{
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: 350; 
+	user-select: none;
+}
+.input{
+	position: relative;
+}
+form input{
+	display: block;	
+	border: none;
+	border-bottom: 1px solid dodgerblue;
+	outline: none;
+	margin: 8px auto;
+}
+
+form label{
+	position: absolute;
+	left: 20px;
+	top:2px;
+	user-select: none;
+	pointer-events: none;
+	font-size: 14px;
+	color: gray;
+	transition: 200ms ease;
+}
+
+input:focus + label, input:valid +label{
+	left: 10px;
+	top:-15px;
+	color: dodgerblue;
+}
+
+form button{
+	background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+	padding: 5px 1px;
+	color:white;
+	border:none;
+	width: 100%;
+	border-radius: 15px;
+	outline: none;
+	font-weight: 730;
+	font-family: "Roboto",sans-serif;
+}
+form p{
+	margin-top: 50px;
+	color: #cacaca;
+	font-weight: 300;	
+	font-family: "Roboto",sans-serif;
+	font-size: 14px;
+}
+form a{
+	color: rgba(0,0,0,0.8);
+	font-weight: 550;
+}
